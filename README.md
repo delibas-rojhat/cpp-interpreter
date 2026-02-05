@@ -30,3 +30,6 @@ Compile with a standard C++ compiler:
 ```bash
 g++ *.cpp -std=c++17 -o witchertracker
 ./witchertracker
+
+## Purpose
+The goal of this project is to develop practical experience in building an interpreter-based system using C++. It focuses on structured input parsing, managing complex program state, and designing modular software components. The project also emphasizes clean architecture, object-oriented design, and handling real-time command processing within a consistent rule-based system.
