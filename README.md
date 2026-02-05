@@ -1,22 +1,32 @@
-# C++ Interpreter
+# Witcher Tracker – C++ Implementation
 
-This project is an interpreter implementation written in C++.  
-It was developed as part of a programming project to understand interpreter design and object-oriented system structure.
+A C++ implementation of an interpreter-based inventory and event tracking system inspired by *The Witcher* universe. The program simulates Geralt's inventory management, alchemy knowledge, and monster encounters through a command-based interpreter.
+
+## Overview
+The system processes textual commands representing actions, knowledge acquisition, encounters, and queries. It maintains internal state for inventory items, potion formulas, bestiary knowledge, and encounter results. Inputs are validated according to strict grammar rules, and appropriate responses are generated for each valid command.
 
 ## Features
-- Parsing and execution of commands
-- Object-oriented architecture
-- Modular class design
-- Extendable structure
+- Command interpreter with strict grammar validation
+- Inventory management for ingredients, potions, and trophies
+- Potion brewing system based on learned formulas
+- Bestiary tracking with potion and sign effectiveness
+- Monster encounter simulation
+- Trading system between trophies and ingredients
+- Query system for inventory, alchemy, and bestiary data
+- Detection of invalid inputs and commands
+
+## Core Functionalities
+Geralt can loot ingredients, brew potions if formulas and ingredients are available, learn potion formulas and monster weaknesses, encounter monsters and collect trophies, trade trophies for ingredients, and query current knowledge and inventory status through interpreter commands.
 
 ## Project Structure
-- `main.cpp` – Program entry point
-- Core classes implement interpreter logic
-- Utility classes support parsing and execution
+main.cpp – Program entry point  
+WitcherTracker.* – Core interpreter and system logic  
+Item / Potion classes – Domain entities  
+Utils.hpp – Helper utilities  
 
 ## Build & Run
-Compile using a C++ compiler:
+Compile with a standard C++ compiler:
 
 ```bash
-g++ *.cpp -o interpreter
-./interpreter
+g++ *.cpp -std=c++17 -o witchertracker
+./witchertracker
